@@ -3,7 +3,6 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 import Swal from "sweetalert2";
 import { supabase } from "@/lib/supabase";
 import { Product } from "../types";
@@ -131,7 +130,6 @@ const EditProductModal = ({
   onClose,
   product,
   onSaveSuccess, 
-  loadingProp, 
 }: {
   isOpen: boolean;
   onClose: () => void;
